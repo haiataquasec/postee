@@ -256,6 +256,7 @@ func (email *EmailOutput) sendViaAwsSesService(awsConfig map[string]string,
 
 func prepareToEmailAddressList(recipients []string) []*string {
 	// Convert to array of string pointers
+	// hai-test-noam-2
 	toAddresses := make([]*string, len(recipients))
 	for i, str := range recipients {
 		toAddresses[i] = aws.String(str)
